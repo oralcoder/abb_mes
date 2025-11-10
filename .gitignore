@@ -1,0 +1,97 @@
+# ------------------------------
+# Python 기본
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 가상환경
+#venv/
+#env/
+#.venv/
+
+# 배포용 빌드 산출물
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# ------------------------------
+# FastAPI / Alembic / SQLModel
+# ------------------------------
+alembic/versions/
+*.db
+*.sqlite3
+
+# ------------------------------
+# 테스트 / 커버리지
+# ------------------------------
+.coverage
+coverage.xml
+htmlcov/
+pytest_cache/
+.cache/
+
+# ------------------------------
+# 로그 / 임시파일
+# ------------------------------
+*.log
+logs/
+tmp/
+temp/
+
+# ------------------------------
+# 환경 설정 / 민감정보
+# ------------------------------
+#.env
+#.env.*
+*.pem
+*.key
+secrets.json
+
+# ------------------------------
+# IDE / 에디터 관련
+# ------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------
+# Docker / Compose
+# ------------------------------
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# ------------------------------
+# OS별 불필요 파일
+# ------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ------------------------------
+# Redis / Celery / Cache
+# ------------------------------
+celerybeat-schedule
+*.rdb
+*.sock
+
+# ------------------------------
+# Reports / Docs 빌드 산출물
+# ------------------------------
+docs/_build/
+sphinx-build/
+site/
+
+# ------------------------------
+# 기타
+# ------------------------------
+app/ai_models
