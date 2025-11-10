@@ -14,8 +14,6 @@ from routers import quality
 
 app = FastAPI(title="MES Project")
 
-# 정적 파일 서빙(선택) — /static/style.css 등
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.on_event("startup")
 def startup_event():
