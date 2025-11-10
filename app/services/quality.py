@@ -41,7 +41,7 @@ def list_inspections(db: Session):
         })
     
     # 작업지시 목록 (검사 등록용)
-    orders = db.query(WorkOrder).filter(WorkOrder.status != "S5_DONE").all()
+    orders = db.query(WorkOrder).filter(WorkOrder.status == "S5_DONE").all()
     
     return {
         "items": items,
